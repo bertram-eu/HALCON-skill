@@ -37,6 +37,12 @@ Or using GitHub shorthand:
 npx skills add bertram-eu/HALCON-skill
 ```
 
+To update the skill to the latest version:
+
+```bash
+npx skills update bertram-eu/HALCON-skill
+```
+
 ### Option B: Manual (git clone)
 
 Clone the repository and copy the skill into your agent's skills directory. The exact path depends on your agent:
