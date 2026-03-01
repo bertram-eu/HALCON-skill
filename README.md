@@ -77,8 +77,7 @@ HALCON-skill/
 
 This is a proof of concept. Known limitations:
 
-- Requires a local HALCON installation for execution and documentation access
-- Deep learning workflows are supported but less thoroughly tested
+- Requires a local HALCON installation and license for execution and documentation access
 - The skill relies on HALCON's HTML operator docs at `HALCONROOT/doc/html/` — if your installation is incomplete, operator lookups may fail
 - Generated scripts should always be reviewed and tested before production use
 
