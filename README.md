@@ -2,7 +2,7 @@
 
 > **Proof of Concept** — This skill is under active development and may change significantly.
 
-An [Agent Skill](https://agentskills.io) for generating, refactoring, running, and reviewing [HALCON](https://www.mvtec.com/products/halcon) vision scripts. It produces HDevelop (`.hdev`) and HDevelopEVO (`.hscript`) programs with accurate operator usage, parameter defaults and documentation.
+An [Agent Skill](https://agentskills.io) for generating, refactoring, running, and reviewing [MVTec](https://www.mvtec.com) [HALCON](https://www.mvtec.com/products/halcon) vision scripts. It produces [HDevelop](https://www.mvtec.com/products/halcon/work-with-halcon/hdevelop) (`.hdev`) and [HDevelopEVO](https://www.mvtec.com/products/halcon/work-with-halcon/hdevelopevo) (`.hscript`) programs with accurate operator usage, parameter defaults and documentation.
 
 This skill follows the open [Agent Skills](https://agentskills.io) standard and works with any compatible agent, including [Claude Code](https://claude.ai/code) and [OpenAI Codex](https://developers.openai.com/codex).
 
