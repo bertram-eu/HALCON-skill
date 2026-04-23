@@ -28,19 +28,19 @@ This skill follows the open [Agent Skills](https://agentskills.io) standard and 
 Installs the skill for all supported agents at once (Claude Code, Cursor, Codex, Copilot, Gemini CLI, and more):
 
 ```bash
-npx skills add https://github.com/bertram-eu/HALCON-skill.git
+npx skills add https://github.com/bertram-eu/halcon-skill.git
 ```
 
 Or using GitHub shorthand:
 
 ```bash
-npx skills add bertram-eu/HALCON-skill
+npx skills add bertram-eu/halcon-skill
 ```
 
 To update the skill to the latest version:
 
 ```bash
-npx skills update bertram-eu/HALCON-skill
+npx skills update bertram-eu/halcon-skill
 ```
 
 ### Option B: Manual (git clone)
@@ -48,7 +48,7 @@ npx skills update bertram-eu/HALCON-skill
 Clone the repository and copy the skill into your agent's skills directory. The exact path depends on your agent:
 
 ```bash
-git clone https://github.com/bertram-eu/HALCON-skill.git
+git clone https://github.com/bertram-eu/halcon-skill.git
 ```
 
 ## Usage
@@ -70,7 +70,7 @@ The skill defaults to `.hdev` (HDevelop XML) format. Mention "HDevelopEVO", "HSc
 ## What's Included
 
 ```
-HALCON-skill/
+halcon-skill/
 ├── SKILL.md                             # Skill definition and authoring rules
 └── references/
     ├── hdev_format_reference.md         # .hdev XML schema and documentation format

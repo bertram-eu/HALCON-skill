@@ -1,5 +1,5 @@
 ---
-name: HALCON-skill
+name: halcon-skill
 description: Generate, refactor, run, and review HALCON HDevelop (`.hdev`) and HDevelopEVO (`.hscript`) programs with accurate operator usage, parameter defaults, value ranges, and practical vision pipelines. Use when the user asks for HDevelop or HScript code, operator selection, debugging logic, converting requirements into vision scripts, or building reusable procedures.
 ---
 
@@ -45,11 +45,11 @@ HALCONROOT documentation (available at `HALCONROOT/doc/`):
    - decision and reporting
 2. Choose operators from the detailed operator reference and keep parameters valid by construction.
 3. Always investigate at least three different implementation approaches and compare their pros and cons before settling on a final solution. If you are unsure which one is the absolute best and most stable solution, ask the user for clarification or preferences.
-4. Tunable parameters should always be procedure parameters with sensbile defaults and a clear parameter range. In `main()` put all tunable parameters in a single block at the top for easy access and documentation.
+4. Tunable parameters should always be procedure parameters with sensible defaults and a clear parameter range. In `main()` put all tunable parameters in a single block at the top for easy access and documentation.
 5. Encapsulate repeated logic into local or external procedures.
 6. Use `dev_` operators for visualization and debugging. Use multiple windows if multiple different visualizations are required. Prefer `dev_set_part()` over cropping for visualization. Only write annotated images in `main()`.
 7. Add robust error handling (`try/catch` or return-code handling) when runtime failures are plausible.
-9. Add parallelization (`par_start`/`par_join`) only for independent tasks and isolated outputs.
+8. Add parallelization (`par_start`/`par_join`) only for independent tasks and isolated outputs.
 9. Keep output semantics explicit (`ok`/`nok`, scores, measured values, reasons).
 10. `main()` is to be treated as a unit test. All parameters and input images set here should be global variables so they can be easily overridden when running with `hrun` (`-D`) or `hscriptengine` (`--input`).
 11. The core image processing logic that should be used in production needs to be a separate procedure with at least an iconic `Image` input parameter and boolean `JobPass` output parameter.
