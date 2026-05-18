@@ -63,6 +63,7 @@ HALCONROOT documentation (available at `HALCONROOT/doc/`):
 - Reuse expensive handles/models (measure, metrology, matching, data code) when processing many images.
 - For metric output, use calibrated transforms instead of pixel approximations.
 - Never use `stop()` anywhere in the script. `stop()` halts execution and waits for user input in HDevelop, which makes the script hang indefinitely when run headless via `hrun` or `hscriptengine`. For error cases, use `return ()` to exit a procedure or `throw` to propagate an error — never `stop()`.
+- **Region clipping:** By default (`set_system('clip_region', 'true')`), regions are clipped to the last-read image dimensions. If no image has been read, `gen_rectangle1` and similar operators produce empty regions **silently** (no error). Always call `read_image` before generating ROIs with absolute pixel coordinates, or disable clipping with `set_system('clip_region', 'false')` beforehand.
 - Document **every** procedure — including `main()` — and all procedure parameters. These descriptions are visible in the HDevelop/HDevelopEVO GUI and are essential for usability. Specifically:
   - For `.hdev`: **every** `<procedure>` (including `main`) must include a `<docu>` block. The `<docu>` block must contain:
     - `<abstract>` — detailed description of what the procedure does
